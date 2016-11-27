@@ -1,0 +1,105 @@
+.main-content {
+    background-color: #ddd;
+    padding-top: 20px;
+    height: 100vh;
+}
+
+.bg-shadow {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.20);
+}
+
+.input-text {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.input-text .input {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+.input-text .input:focus {
+    outline: none;
+}
+
+.note {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.note-title {
+    position: relative;
+}
+
+.note-element {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+
+.note-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+.btn-square {
+    border-radius: 0;
+}
+
+.toggle-switch {
+    display: none;
+}
+
+.toggle-switch+label {
+    display: inline-block;
+    position: relative;
+    height: 16px;
+    max-height: 1em;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 40px;
+    line-height: 16px;
+}
+
+.toggle-switch+label:before {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    content: '';
+    border-style: solid;
+    width: 30px;
+    height: 16px;
+    border-width: 0;
+    border-color: transparent;
+    background-color: #afafaf;
+    box-shadow: 0;
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.toggle-switch:checked+label:before {
+    background-color: #4db446;
+    transition: all .3s;
+}
+
+.toggle-switch+label:after {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    top: 1px;
+    left: 1px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(51,51,51,0.25);
+    border-radius: 16px;
+    transition: left .3s,right .3s;
+}
+
+.toggle-switch:checked+label:after {
+    left: 15px;
+    transition: left .3s,right .3s;
+}
